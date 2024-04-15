@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>airbnd</title>
+  <link rel="stylesheet" href="homec.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+<div class="a">
+  
+  show map
+  <span class="material-symbols-outlined">
+    map
+    </span>
+</div>
+
+
+
+  <header>
+    <div class="c">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="error" height="150px" width="10%" />
+
+      <h1 class="d">stays</h1>
+      <h1 class="e">experiences</h1>
+      <h1  class="f">online experiences</h1>
+      <h1 class="g">airbnb your home</h1>
+      <span id="h" class="material-symbols-outlined"> language </span>
+      <div
+       class="i">
+        <span class="material-symbols-outlined"> menu </span>
+        <span class="material-symbols-outlined"> account_circle </span>
+      </div>
+    </div>
+    <div class="b">
+      <div class="j">
+        <h4>where <br>
+          search destinations</h4>
+
+      </div>
+      <div class="k">
+        <h4>check in <br>
+          add dates</h4>
+
+      </div>
+      <div class="l">
+        <h4>check in <br>
+          add dates</h4>
+
+      </div>
+      <div class="m">
+        <h4>who <br>
+          add guests</h4>
+
+      </div>
+      <div class="n">
+        <span id="o" class="material-symbols-outlined">
+          search
+          </span>
+      </div>
+    </div>
+
+  </header>
+  <br><hr>
+  <a href="#j"><span id="w" class="material-symbols-outlined">
+    arrow_back_ios
+    </span></a>
+  <a href="#p"><span id="q" class="material-symbols-outlined">
+    arrow_forward_ios
+    </span></a>
+    <div class="aa">
+<div class="x">
+  <div>
+    <img id="j" style="margin-left: 45px;" src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Historical homes</p>
+
+  </div>
+  <div>
+    <a style="text-decoration: none; color: black;" href="first.html"><img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Rooms</p></a>
+  </div>
+  <div>
+  <a style="text-decoration: none; color: black;" href="second.html"><img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Amazing pools</p></a>  
+  </div>
+  <div>
+   <a style="text-decoration: none; color: black;" href="third.html"> <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">OMG!</p></a>
+  </div>
+  <div>
+   <a style="text-decoration: none; color: black;" href="four.html"> <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Iconic cities</p></a>
+  </div>
+  <div>
+   <a style="text-decoration: none; color: black;" href="five.html"> <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg" alt="error" height="50px" width="50px">
+    <br>
+    <p style="text-align: center; margin-left: 35px; font-size: 20px;">Play</p></a>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Top of the world</p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Camper vans</p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Islands</p>
+  </div>
+
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Beach</p>
+  </div>
+
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Arctic</p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Amazing views</p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Design</p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt="error" height="50px" width="50px">
+    <br><p style="text-align: center; margin-left: 35px; font-size: 20px;">Camping </p>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="error" height="50px" width="50px">
+    <br>
+
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src=" https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/51f5cf64-5821-400c-8033-8a10c7787d69.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c8bba3ed-34c0-464a-8e6e-27574d20e4d2.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/e4b12c1b-409b-4cb6-a674-7c1284449f6e.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/747b326c-cb8f-41cf-a7f9-809ab646e10c.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/48b55f09-f51c-4ff5-b2c6-7f6bd4d1e049.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/827c5623-d182-474a-823c-db3894490896.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/4759a0a7-96a8-4dcd-9490-ed785af6df14.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/e22b0816-f0f3-42a0-a5db-e0f1fa93292b.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+
+  
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c027ff1a-b89c-4331-ae04-f8dee1cdc287.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/8eccb972-4bd6-43c5-ac83-27822c0d3dcd.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/c9157d0a-98fe-4516-af81-44022118fbc7.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img style="margin-left: 45px;" src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+  <div>
+    <img id="p" style="margin-left: 45px;" src="https://a0.muscache.com/pictures/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg" alt="error" height="50px" width="50px">
+    <br>
+  </div>
+</div>
+  <div class="u">
+    <span class="material-symbols-outlined">
+      tune
+      </span> <h6 style="margin-left: 10px">filters</h6>
+  </div>
+  <div class="t">
+    <h5 class="y">Display total before taxes <span style="margin-left: 10px; font-size: 50px;" class="material-symbols-outlined">
+      toggle_on
+      </span></h5>
+  </div>
+
+  
+</div>
+
+<article style="flex-wrap: wrap;">
+  <div style="margin-top: 80px; margin-left: 10px; display: flex;">
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/944b9510-945e-47cd-bd7d-bc1b5b94ba4b.jpg?im_w=1200" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>anjuna, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  on the beach  <br>
+1-6 Apr <br>
+  ₹6,932
+  night</p>
+  <span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/3ccacc04-2a74-4d02-a772-6991eb938fc6.jpg?im_w=1200" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>barashiv, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  on the beach  <br>
+5-10 Apr <br>
+  ₹43,255
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-27451296/original/6bc4e7ab-62b4-424a-9c8a-2e56d2e0364b.jpeg?im_w=1200" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>mumbai, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  on the beach   <br>
+15-20 Apr <br>
+  ₹4,051 
+  night</p> <span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-33996825/original/40961690-1a10-40ea-910f-c3f836b01250.jpeg?im_w=1200" alt="error" height="250px" width="250px" > <h3 style="margin-bottom: -10px; margin-top:-10px;"><p>mira bhayandar, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  22   kilometres away  <br>
+7-12 Apr <br>
+  ₹17,118 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/10429578-3665-42c4-bd62-86b065b228da.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>mandrem, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+1 min walk to ashvem beach  <br>
+1-6 jan <br>
+  ₹3,994 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+<div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-749996089802009824/original/8fefceb0-da83-461c-9441-1dc5ce1c0174.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>goa, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  on the beach   <br>
+1-6 Apr <br>
+  ₹4,579 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+  </div>
+  <div style=" margin-top: 20px; margin-left: 10px;display: flex;">
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/monet/Luxury-690431182649594094/original/c527e0c1-8549-4f07-98c0-4176d28cb892?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>mandrem, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      4 min walk to mandrem beach <br>
+    1-6 Apr <br>
+      ₹1,726 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/33dae5b5-6141-4e56-83ee-253b88d31159.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-704260259133454902/original/4edf42b0-2bf9-41a3-b23b-2791e0f16af1.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-1023941252451693598/original/40521291-0d51-4348-b196-e1a5647c22aa.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-3298227/original/db91b151-be3e-4a4c-8790-ed64c0ac7698.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/c86830dd-415a-426f-8b3d-8c0fce5402fd.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+  </div>
+  <div style="display: flex; margin-top: 20px; margin-left: 10px;">
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/hosting/Hosting-973027653131514949/original/c103e7b6-826a-4707-979a-c5d81358c36d.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/bde55690-addf-44b3-9c03-1349fc5908d3.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-47726590/original/073089b8-d783-47df-bcda-e636bdb0d0a9.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-989225924012535287/original/aa2962a9-e51c-44c9-8a20-79e9a8d36b02.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-34010905/original/dbfd6f1c-2024-4a4b-a861-cc6617f76234.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-46136014/original/5a18c7ca-e0f1-401d-9fb3-887541205113.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+  </div>
+  <div style="display: flex; margin-top: 20px; margin-left: 10px;">
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/103043747/1c2ac70a_original.jpg?im_w=720" alt="error" height="250px" width="250px" > <h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+      star_rate 
+      </span>5.0</h3>
+      394 kilometres away  <br>
+    1-6 Apr <br>
+      ₹10,000 
+      night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-998663239495009360/original/859f88f0-24fd-4317-a542-448ae730bffd.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-749571803045924743/original/640b8169-07ce-4755-bdc7-0c29fb6cb01a.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1053814798225057445/original/d22f6bb0-252a-49de-ae2a-db57baa8831c.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-45471602/original/1783078a-2f6a-43a3-82ea-e3e506b6b969.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;" ><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/bbe939d6-8991-4f7b-9d5d-52b4fdd8a583.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+  </div>
+  <div style="display: flex; margin-top: 20px; margin-left: 10px;">
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/ad85abf4-25e3-4e9a-8e53-cc61cb724e70.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-694138455270990871/original/e964de57-bd8c-45f6-82b1-3b9c6d425482.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-679548961635495824/original/38c34125-85a8-4618-ac56-a922b44904c0.jpeg?im_w=720 " alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-614691699143677918/original/61ae8be9-1cae-444e-9b22-d96713b45438.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-53356377/original/92fe34bc-bf42-4bc0-a361-a08353e0ec12.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/490ad4bc-dd3f-40a6-ac5e-4ca30b4597fe.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+  </div>
+  <div style="display: flex ; margin-top: 20px; margin-left: 10px;">
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/4ac06cba-7b1d-4d8c-b124-1d956726c797.jpg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1016590046548252858/original/5c6c9f36-30e6-4f4c-a136-639d07cb5748.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-35315742/original/cf75cd00-e002-4be2-a279-b8b17e5a404d.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-1045854960701532360/original/862245f6-4040-4ae2-ab39-87a008084da5.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-46136014/original/5a18c7ca-e0f1-401d-9fb3-887541205113.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span></div>
+    <div style="margin-left: 21px; "><img style="border-radius: 25px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-34010905/original/dbfd6f1c-2024-4a4b-a861-cc6617f76234.jpeg?im_w=720" alt="error" height="250px" width="250px" ><h3 style="margin-bottom: -10px; margin-top:-10px;"><p>Tiracol, India <span style="margin-left: 75px; font-size: 25px; position: relative; bottom: -6px;" class="material-symbols-outlined">
+  star_rate 
+  </span>5.0</h3>
+  394 kilometres away  <br>
+1-6 Apr <br>
+  ₹10,000 
+  night</p><span style="position: relative; left: 200px ; top: -350px; color:blue" class="material-symbols-outlined">
+    favorite
+    </span> </div>
+  </div>
+</article>
+<br>
+<div>
+
+  <h1 style="text-align: center;">Continue exploring beach homes</h1>
+  <button style="position: relative; left: 45%; font-size: 30px; background-color: black; color: aliceblue; border-radius: 7px;">show more</button>
+</div>
+
+<br>
+<br><hr>
+
+<h1 style="margin-left: 20%;">Inspiration for future getaways</h1>
+<div style="display: flex; margin-left: 18%;">
+<h4 style="margin-left: 30px;">Popular</h4>
+ <H4 style="margin-left: 30px;"> Arts & culture</H4>
+<h4 style="margin-left: 30px;">  Outdoors</h4>
+  <h4 style="margin-left: 30px;">Mountains</h4>
+<h4 style="margin-left: 30px;">  Beach</h4>
+  <h4 style="margin-left: 30px;">Unique stays</h4>
+  <h4 style="margin-left: 30px;">Categories</h4>
+ <h4 style="margin-left: 30px;"> Things to do</h4></div>
+
+ <hr>
+ <div style="display: flex; margin-left: 17%;">
+ <h4 style="margin-left: 50px;">
+  Canmore <br>
+Pet-friendly rentals</h4>
+<h4 style="margin-left: 50px;"> Benalmádena <br>
+House rentals</h4>
+<h4 style="margin-left: 50px;">
+Marbella <br>
+Beachfront rentals</h4>
+<h4 style="margin-left: 50px;">
+Mijas <br>
+Holiday rentals</h4>
+<h4 style="margin-left: 50px;">
+Prescott <br>
+Cabin rentals</h4>
+<h4 style="margin-left: 50px;">
+Scottsdale <br>
+Apartment rentals
+ </h4>
+</div>
+<div style="display: flex; margin-left: 17%;">
+  <h4 style="margin-left: 50px;">
+    Tucson
+    <br>
+    House rentals</h4>
+ <h4 style="margin-left: 90px;"> Jasper <br>
+  Cabin rentals</h4>
+ <h4 style="margin-left: 50px;">
+  Mountain View <br>
+  Holiday rentals</h4>
+ <h4 style="margin-left: 50px;">
+  
+Devonport <br>
+Holiday rentals
+</h4>
+ <h4 style="margin-left: 50px;">
+  Mallacoota <br>
+  Beach house rentals</h4>
+ <h4 style="margin-left: 50px;">
+
+  Ibiza <br>
+  Holiday rentals
+  </h4>
+ </div>
+
+
+
+ <div style="display: flex; margin-left: 17%;">
+  <h4 style="margin-left: 50px;">
+    Anaheim <br>
+    Family-friendly rentals</h4>
+ <h4 style="margin-left: 50px;">Monterey <br>
+  Flat rentals
+ </h4>
+ <h4 style="margin-left: 50px;">
+  paso Robles <br>
+  House rentals</h4>
+ <h4 style="margin-left: 50px;">
+  
+  Santa Barbara <br>
+  Apartment rentals
+</h4>
+ <h4 style="margin-left: 50px;">
+
+  Sonoma <br>
+  Holiday rentals</h4>
+ <h4 style="margin-left: 50px;">
+
+  <select style="border: 0px; font-size: 20px; margin-top: 7px;" >
+    <option value="show more"> show more</option>
+  </select>
+  </h4>
+ </div>
+ <br>
+ <hr>
+
+
+ <div style="display: flex;"> 
+  <div style="margin-left: 20%;">
+
+    <h5>Support</h5>
+    <h5> Help Centre</h5>
+    <h5>AirCover</h5>
+    <h5>Anti-discrimination</h5>
+    <h5>Disability support</h5>
+    <h5>Cancellation options</h5>
+    <h5>Report neighbourhood concern</h5>
+  </div>
+
+
+   <div style="margin-left: 15%;">
+<h5>hosting</h5>
+<h5> airbnb your home</h5>
+<h5>aircover your hosts</h5>
+<h5>hosting resources</h5>
+<h5>community forum</h5>
+<h5>hosting responsibly</h5>
+<h5>join a free hosting class</h5>
+
+   </div>
+
+
+   <div style="margin-left: 15%;">
+    <h5>airbnb</h5>
+    <h5> newsroom</h5>
+    <h5>new features</h5>
+    <h5>careers</h5>
+    <h5>investors</h5>
+    <h5>airbnb.org emergency stays</h5>
+    
+    
+       </div>
+ </div>
+<br><hr>
+
+ <div  style="margin-left: 20%; display: flex;">
+
+  <div>
+<h4>© 2024 Airbnb, Inc.·Privacy.Terms.Sitemap.Companydetails</h4></div>
+<div>
+<h4 style="margin-left: 350px;"><span class="material-symbols-outlined">
+  language
+  </span> </h4>  </div>
+  <div style="margin-left: 5px;"><h4>English(IN)</h4></div>
+  <div style="margin-left: 10px;"><h4>₹ INR</h4></div>
+  <div style="margin-left: 10px; "><h4><img src="data:image/png;base64,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" alt=""height="20px" width="20px" ></h4></div>
+  <div style="margin-left: 10px; width: 10px; height: 100%; position: relative; bottom: -15px;"><img src="data:image/png;base64,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" alt="" width="350%"></div>
+  <div style="margin-left: 40px;"><h4><img src="data:image/png;base64,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" alt="" height="20px" width="20px"></h4></div>
+  <div></div>
+
+
+
+ </div>
+</body>
+
+</html>

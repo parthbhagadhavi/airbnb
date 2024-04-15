@@ -1,0 +1,149 @@
+*{
+   font-family: ;
+}
+
+.b{
+   height: 80px; 
+   width: 800px;
+   border: 3px solid black;
+   border-radius: 45px;
+   align-items: center;
+   display: flex;
+   position: relative;
+   left: 400px;
+
+  padding-top: 5px;
+   padding-bottom: 5px;
+    width: 5.%;
+}
+.a{
+   display: flex;
+    border: 1px solid black;
+     width: 90px;
+      border-radius: 20px;
+      padding: 10px ;
+       width: 5.5%;
+}
+.c{
+ display: flex ;
+ align-items: center;
+  width: 100%; 
+  
+}
+.d{
+ margin-left: 27%;
+ font-size: 20px; 
+}
+.e{
+   margin-left:4%;
+    font-size: 20px;
+}
+.f{
+  margin-left:4%;
+   font-size: 20px;
+}
+.g{
+  margin-left:15%;
+   font-size: 20px;
+}
+#h{
+  margin-left: 30px;
+   font-size: 30px;
+     
+}
+.i{
+   border: 2px solid rgb(47, 47, 47);
+    border-radius: 35px;
+     align-items: center;font-size: 40px;
+      margin-left: 40px;
+       padding: 7px; 
+       width:5.%;
+}
+.j{
+  margin-left: 30px;
+    border-right: 1px solid black;
+     width: 20%;
+}
+.k{
+   border-right: 1px solid black;
+    width: 20%;
+     text-align: center; 
+}
+.l{
+    border-right: 1px solid black;
+     width: 20%;
+      text-align: center;
+}
+.m{
+    width: 15%;
+     text-align: center;
+}
+.n{
+   margin-left: 80px;
+    width: 10%; 
+}
+#o{
+    border: 2px solid black;
+     border-radius: 100%;
+      background-color:red;
+       color: azure;
+       padding: 10px;
+
+}
+#w{
+   position: relative;
+    top: 80px;
+     border: 1px solid black;
+      border-radius: 30px;
+       padding: 7px;
+        text-decoration: none;
+         text-align: center; 
+}
+#q{
+  position: relative;
+   top: 65px;
+    left: 1150px;
+     border: 1px solid black;
+      border-radius: 45px;
+       padding: 7px;
+        text-decoration: none; 
+}
+.aa{
+  display: flex;
+}
+
+.x{
+   display: flex;
+    overflow: auto;
+     width: 70%; 
+}
+.u{
+   border: 1px solid black;
+    height: 70px;
+     width: 100px;
+      margin-left: 100px;
+       display: flex;
+        text-align: center;
+         align-items: center;
+          justify-content: center;
+           margin-top: 30px;
+            border-radius: 15px;
+             padding: 0px;
+}
+.t{
+   border: 1px solid black;
+    height: 70px;
+     width: 250px;
+      margin-left: 30px;
+       display: flex;
+         margin-top: 30px;
+          border-radius: 15px;
+           padding: 0px;
+}
+.y{
+   margin-left: 10px;
+   display: flex;
+    align-items: center;
+     justify-content: center;
+      margin-left: 25px;
+}
